@@ -5,7 +5,6 @@ namespace Series
     //Utilização de tipos genéticos permite generelização de uso
     public interface IRepositorio<T> //Tipo genérico
     {
-
         List<T> Lista();
 
         T RetornaPorId(int id);
