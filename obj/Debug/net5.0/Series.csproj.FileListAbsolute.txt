@@ -1,0 +1,16 @@
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/bin/Debug/net5.0/Series
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/bin/Debug/net5.0/Series.deps.json
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/bin/Debug/net5.0/Series.runtimeconfig.json
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/bin/Debug/net5.0/Series.runtimeconfig.dev.json
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/bin/Debug/net5.0/Series.dll
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/bin/Debug/net5.0/ref/Series.dll
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/bin/Debug/net5.0/Series.pdb
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/Series.csprojAssemblyReference.cache
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/Series.GeneratedMSBuildEditorConfig.editorconfig
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/Series.AssemblyInfoInputs.cache
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/Series.AssemblyInfo.cs
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/Series.csproj.CoreCompileInputs.cache
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/Series.dll
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/ref/Series.dll
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/Series.pdb
+/home/fabio/Documentos/Linguagens de Programação/C#.NET/LocalizaBootcamp/Series/obj/Debug/net5.0/Series.genruntimeconfig.cache
