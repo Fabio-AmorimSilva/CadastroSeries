@@ -8,32 +8,32 @@ namespace Series
         private List<Serie> listSerie = new List<Serie>();
         public void Atualizar(int id, Serie entidade)
         {
-            throw new System.NotImplementedException();
+            listSerie[id] = entidade;
         }
 
         public void Excluir(int id)
         {
-            throw new System.NotImplementedException();
+            listSerie[id].Excluir();
         }
 
         public void Insere(Serie entidade)
         {
-            throw new System.NotImplementedException();
+            listSerie.Add(entidade);
         }
 
         public List<Serie> Lista()
         {
-            throw new System.NotImplementedException();
+            return listSerie;
         }
 
         public int ProximoId()
         {
-            throw new System.NotImplementedException();
+            return listSerie.Count;
         }
 
         public Serie RetornaPorId(int id)
         {
-            throw new System.NotImplementedException();
+            return listSerie[id];
         }
     }
 }

@@ -10,14 +10,11 @@ namespace Series
         private string Titulo{get; set;}
         private string Descricao{get; set;}
         private int Ano{get; set;}
+        private bool Excluido{get; set;}
 
         //Métodos
 
         //Sobrecarga de construtores
-        public Serie(){
-
-        }
-
         public Serie(int id, Genero genero, string titulo, string descricao, int ano){
 
             this.Id = id;
@@ -25,6 +22,7 @@ namespace Series
             this.Titulo = titulo;
             this.Descricao = descricao;
             this.Ano = ano;
+            this.Excluido = false;
 
         }
 
@@ -46,6 +44,11 @@ namespace Series
 
         public int retornaId(){
             return this.Id;
+
+        }
+
+        public void Excluir(){
+            this.Excluido = true;
             
         }
 
