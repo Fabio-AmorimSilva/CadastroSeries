@@ -8,8 +8,74 @@ namespace Series
         static SerieRepositorio repositorio = new SerieRepositorio();
         static void Main(string[] args)
         {
+             OperacoesLocadora();
+        }
+
+        private static string OpcoesLocadora(){
+
+            Console.WriteLine();
+            Console.WriteLine("Bem-Vindo à Block Buster Revival.");
+            Console.WriteLine("Informe a Opção Desejada.");
+
+            Console.WriteLine("1 - Séries.");
+            Console.WriteLine("2 - Filmes.");
+            Console.WriteLine("C - Limpar a Tela.");
+            Console.WriteLine("X - Sair.");
+
+            string opcaoUsuario = Console.ReadLine().ToUpper();
+            return opcaoUsuario;
             
-            string opUsuario = ObterOpcaoUsuario();
+        }
+
+        private static void OperacoesLocadora(){
+
+            string opcaoUsuario = OpcoesLocadora();
+
+            while(opcaoUsuario.ToUpper() != "X"){
+                switch(opcaoUsuario){
+                    case "1":
+                        OperacoesSeries();
+                    break;
+                    case "2":
+                        OperacoesFilmes();
+                    break;
+                    case "C":
+                        Console.Clear();
+                        Console.WriteLine();
+                    break;
+                    default:
+                        Console.WriteLine("Digite uma opção válida!");
+                        Console.WriteLine();
+                    break;
+                }
+
+                opcaoUsuario = OpcoesLocadora();
+
+            }
+
+        }
+
+        private static string ObterOpcaoUsuarioSerie()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Block Buster Revival - Séries");
+            Console.WriteLine("Informe a Opção Desejada.");
+
+            Console.WriteLine("1 - Listar Séries.");
+            Console.WriteLine("2 - Inserir nova Série.");
+            Console.WriteLine("3 - Atualizar Série.");
+            Console.WriteLine("4 - Excluir Série.");
+            Console.WriteLine("5 - Visualizar Série.");
+            Console.WriteLine("C - Limpar Tela.");
+            Console.WriteLine("X - Sair.");
+
+            string opcaoUsuario = Console.ReadLine().ToUpper();
+            return opcaoUsuario;
+        }
+
+        private static void OperacoesSeries(){
+             
+            string opUsuario = ObterOpcaoUsuarioSerie();
             
             while(opUsuario.ToUpper() != "X"){
 
@@ -37,12 +103,66 @@ namespace Series
                     break;
                 }
 
-                opUsuario = ObterOpcaoUsuario();
+                opUsuario = ObterOpcaoUsuarioSerie();
+            }
+            
+        }
+
+        private static string ObterOpcaoUsuarioFilme(){
+
+            Console.WriteLine();
+            Console.WriteLine("Block Buster Revival - Filmes");
+            Console.WriteLine("Informe a Opção Desejada.");
+
+            Console.WriteLine("1 - Listar Filmes.");
+            Console.WriteLine("2 - Inserir Filme.");
+            Console.WriteLine("3 - Atualizar Filme.");
+            Console.WriteLine("4 - Excluir Filme.");
+            Console.WriteLine("5 - Visualizar Filme.");
+            Console.WriteLine("C - Limpar Tela.");
+            Console.WriteLine("X - Sair");
+
+            string opcaoUsuario = Console.ReadLine().ToUpper();
+            return opcaoUsuario;
+
+        }
+
+        private static void OperacoesFilmes(){
+
+            string opcao = ObterOpcaoUsuarioFilme();
+
+            while(opcao != "X"){
+                switch(opcao){
+                    case "1":
+                        //ListarFilmes();
+                    break;
+                    case "2":
+                        //InsereFilme();
+                    break;
+                    case "3":
+                        //AtualizaFilme();
+                    break;
+                    case "4":
+                        //ExcluirFilme();
+                    break;
+                    case "5":
+                        //VizualizaFilme();
+                    break;
+                    case "C":
+                        Console.Clear();
+                        Console.WriteLine();
+                    break;
+                    default:
+                        Console.WriteLine("Digite uma opção válida!");
+                        Console.WriteLine();
+                    break;
+
+                }
+
+                opcao = ObterOpcaoUsuarioFilme();
             }
 
-            Console.WriteLine("Obrigado por utilizar nossos serviços.");
-            Console.ReadLine();
-            
+
         }
 
         private static void VizualizaSerie()
@@ -117,24 +237,7 @@ namespace Series
             }
         }
 
-        private static string ObterOpcaoUsuario()
-        {
-            Console.WriteLine();
-            Console.WriteLine("Block Buster Revival");
-            Console.WriteLine("Informe a opção desejada.");
-
-            Console.WriteLine("1 - Listar Séries.");
-            Console.WriteLine("2 - Inserir nova série.");
-            Console.WriteLine("3 - Atualizar Série.");
-            Console.WriteLine("4 - Excluir Série.");
-            Console.WriteLine("5 - Visualizar Série.");
-            Console.WriteLine("C - Limpar Tela.");
-            Console.WriteLine("X - Sair.");
-
-            string opcaoUsuario = Console.ReadLine().ToUpper();
-            Console.WriteLine();
-            return opcaoUsuario;
-        }
+        
 
         private static void InserirSerie()
         {
